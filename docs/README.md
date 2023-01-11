@@ -1,3 +1,7 @@
+---
+stoplight-id: 906913a6a86e0
+---
+
 ## The `openapi` folder
 
 This folder contains your entrypoint `openapi.yaml`.
