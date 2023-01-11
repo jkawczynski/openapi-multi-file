@@ -1,4 +1,6 @@
 openapi: 3.1.0
+x-stoplight:
+  id: f7a2d2ccdcc92
 info:
   version: 1.0.0
   title: Example.com
@@ -12,7 +14,7 @@ info:
   x-logo:
     url: 'https://redocly.github.io/openapi-template/logo.png'
   description:
-    $ref: ./info-description.md
+    $ref: openapi/info-description.md
 tags:
   - name: Echo
     description: Example echo operations.
@@ -29,13 +31,13 @@ servers:
   - url: 'https://example.com/api/v1'
 paths:
   '/users/{username}':
-    $ref: 'paths/users_{username}.yaml'
+    $ref: 'openapi/paths/users_{username}.yaml'
   /echo:
-    $ref: paths/echo.yaml
+    $ref: openapi/paths/echo.yaml
   /pathItem:
-    $ref: paths/path-item.yaml
+    $ref: openapi/paths/path-item.yaml
   /pathItemWithExamples:
-    $ref: paths/path-item-with-examples.yaml
+    $ref: openapi/paths/path-item-with-examples.yaml
 components:
   securitySchemes:
     main_auth:
